@@ -1,16 +1,7 @@
 mod hello;
+mod util;
 
 use hello::say;
-
-macro_rules! foo {
-    ($l:tt) => { bar!($l); }
-}
-
-macro_rules! bar {
-    (3) => {
-        println!("Here we are, bar!");
-    }
-}
 
 
 
